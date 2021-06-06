@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+header nav{
+    height: 90px;
+    background:linear-gradient(#84f184 2%, #ffffff 100%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.icono{
+    display: none;
+}
+.ico{
+ text-align: left;  
+}
+
+.enlaces{
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+}
+
+.enlaces a{
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    padding: 4px 0;
+    transition: 0.7s ease-out;
+    color: #030303;
+    text-decoration: none;
+}
+.enlaces a:hover , .activate{
+    border-top:  1px solid #2ec22e;
+  /*  border-bottom:  1px solid #2ec22e;*/
+} 
+nav .logo{
+    background-color:#ffffff ;
+    margin-left: 80px;
+    height: 100%;
+}
+header.textos{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 150px;
+   
+}
+header .textos h1{
+    font-size: 95px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+header .textos h2{
+    font-size: 30px;   
+    font-weight: 600;
+}
+@media screen and (max-width:750px){
+    .icono{
+        display: flex;
+        justify-content: center;
+        height: 90px;
+        align-items: center;
+        color: #030303;
+        background: transparent;
+        padding: 20px;
+        z-index: 100;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+    
+    .enlaces{
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        transition: all 1s ease;
+        
+        background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    
+    .uno{
+        -webkit-clip-path : circle(0% at 100% 0);
+        clip-path: circle(0 at 100% 0) ;
+    }
+    .dos{
+        -webkit-clip-path : circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0) ;
+    }
+}
+.textos h1{
+    font-size: 75px;
+   text-align: center;
+}
